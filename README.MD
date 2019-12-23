@@ -1,6 +1,8 @@
 ## CollectionView with n images and n videos links
 
-A sample of how to make a collectionView with images and videos in the cells
+A sample of how to make a collectionView with images and videos in the cells.
+
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 ### INSTRUCTIONS
 
