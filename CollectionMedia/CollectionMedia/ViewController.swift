@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Collection
+//  CollectionMedia
 //
-//  Created by Arturo Carretero Calvo on 20/12/2019.
+//  Created by Arturo Carretero Calvo on 23/12/2019.
 //  Copyright © 2019 Arturo Carretero Calvo. All rights reserved.
 //
 
