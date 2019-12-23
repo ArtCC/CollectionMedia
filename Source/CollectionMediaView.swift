@@ -11,6 +11,8 @@ import UIKit
 class CollectionMediaView: UIView {
     
     // MARK: Properties
+    @IBOutlet weak var pageControl: UIPageControl!
+    
     fileprivate var imageCollection: [String] = []
     fileprivate var videoCollection: [String] = []
     fileprivate var collectionView: UICollectionView?
@@ -46,6 +48,7 @@ class CollectionMediaView: UIView {
             self.layoutFlow.scrollDirection = .horizontal
         }
         self.setupCollection()
+        self.setupPageControl()
     }
 }
 
@@ -54,7 +57,6 @@ private extension CollectionMediaView {
     
     func setupCollection() {
         self.collectionView = UICollectionView.init(frame: self.frame, collectionViewLayout: self.layoutFlow)
-        self.showCurrentPageIndicator(index: 0)
         if let collectionMedia = self.collectionView {
             collectionMedia.register(UINib(nibName: self.imageCell, bundle: nil),
                                      forCellWithReuseIdentifier: self.imageCell)
@@ -69,12 +71,23 @@ private extension CollectionMediaView {
             collectionMedia.delegate = self
             collectionMedia.dataSource = self
             collectionMedia.reloadData()
-            self.insertSubview(collectionMedia, aboveSubview: self)
+            self.insertSubview(collectionMedia, belowSubview: self.pageControl)
+        }
+    }
+    
+    func setupPageControl() {
+        let total = self.imageCollection.count + self.videoCollection.count
+        if total < 2 {
+            self.pageControl.isHidden = true
+        } else {
+            self.pageControl.numberOfPages = total
+            self.pageControl.currentPage = 0
+            self.showCurrentPageIndicator(index: 0)
         }
     }
     
     func showCurrentPageIndicator(index: Int) {
-        print("Page: \(index)")
+        self.pageControl.currentPage = index
     }
 }
 

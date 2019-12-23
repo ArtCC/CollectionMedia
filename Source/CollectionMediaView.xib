@@ -12,9 +12,25 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollectionMediaView" customModule="CollectionMedia" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="500" height="500"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="G1A-my-ZLM">
+                    <rect key="frame" x="230.5" y="419" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="39" id="2Rs-Gr-yiy"/>
+                        <constraint firstAttribute="height" constant="37" id="K1d-DD-09z"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="G1A-my-ZLM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="QyB-nj-PAE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="G1A-my-ZLM" secondAttribute="bottom" constant="10" id="qon-dV-mQf"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="pageControl" destination="G1A-my-ZLM" id="A1q-uA-8lA"/>
+            </connections>
             <point key="canvasLocation" x="-68" y="22"/>
         </view>
     </objects>
