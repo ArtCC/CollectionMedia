@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6928577623B0DEC700BB43FA /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6928577423B0DEC700BB43FA /* ImageCollectionViewCell.swift */; };
+		6928577723B0DEC700BB43FA /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6928577523B0DEC700BB43FA /* ImageCollectionViewCell.xib */; };
+		6928577A23B0DED200BB43FA /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6928577823B0DED200BB43FA /* VideoCollectionViewCell.swift */; };
+		6928577B23B0DED200BB43FA /* VideoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6928577923B0DED200BB43FA /* VideoCollectionViewCell.xib */; };
 		69BDA29723B0DD1C00F86DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA29623B0DD1C00F86DA3 /* AppDelegate.swift */; };
 		69BDA29923B0DD1C00F86DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA29823B0DD1C00F86DA3 /* SceneDelegate.swift */; };
 		69BDA29B23B0DD1C00F86DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BDA29A23B0DD1C00F86DA3 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6928577423B0DEC700BB43FA /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		6928577523B0DEC700BB43FA /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		6928577823B0DED200BB43FA /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		6928577923B0DED200BB43FA /* VideoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCollectionViewCell.xib; sourceTree = "<group>"; };
 		69BDA29323B0DD1C00F86DA3 /* CollectionMedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionMedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69BDA29623B0DD1C00F86DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69BDA29823B0DD1C00F86DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6928577123B0DE9F00BB43FA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6928577423B0DEC700BB43FA /* ImageCollectionViewCell.swift */,
+				6928577523B0DEC700BB43FA /* ImageCollectionViewCell.xib */,
+				6928577823B0DED200BB43FA /* VideoCollectionViewCell.swift */,
+				6928577923B0DED200BB43FA /* VideoCollectionViewCell.xib */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		69BDA28A23B0DD1C00F86DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +75,7 @@
 		69BDA29523B0DD1C00F86DA3 /* CollectionMedia */ = {
 			isa = PBXGroup;
 			children = (
+				6928577123B0DE9F00BB43FA /* Source */,
 				69BDA29623B0DD1C00F86DA3 /* AppDelegate.swift */,
 				69BDA29823B0DD1C00F86DA3 /* SceneDelegate.swift */,
 				69BDA29A23B0DD1C00F86DA3 /* ViewController.swift */,
@@ -127,6 +147,8 @@
 			files = (
 				69BDA2A323B0DD1D00F86DA3 /* LaunchScreen.storyboard in Resources */,
 				69BDA2A023B0DD1D00F86DA3 /* Assets.xcassets in Resources */,
+				6928577B23B0DED200BB43FA /* VideoCollectionViewCell.xib in Resources */,
+				6928577723B0DEC700BB43FA /* ImageCollectionViewCell.xib in Resources */,
 				69BDA29E23B0DD1C00F86DA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +162,8 @@
 			files = (
 				69BDA29B23B0DD1C00F86DA3 /* ViewController.swift in Sources */,
 				69BDA29723B0DD1C00F86DA3 /* AppDelegate.swift in Sources */,
+				6928577623B0DEC700BB43FA /* ImageCollectionViewCell.swift in Sources */,
+				6928577A23B0DED200BB43FA /* VideoCollectionViewCell.swift in Sources */,
 				69BDA29923B0DD1C00F86DA3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
