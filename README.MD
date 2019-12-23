@@ -2,7 +2,9 @@
 
 A sample of how to make a collectionView with images and videos in the cells.
 
-![Alt Text](https://github.com/ArtCC/CollectionMedia/blob/develop/example.gif)
+<p>
+    <img src="https://github.com/ArtCC/CollectionMedia/blob/develop/example.gif" height="300" max-height ="50%"/>
+</p>
 
 ### INSTRUCTIONS
 
